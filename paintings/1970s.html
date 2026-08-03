@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>1970s Paintings &amp; Works on Paper | Ron English Catalogue Raisonné</title>
+  <title>1960s–1960s–1970s Paintings &amp; Works on Paper | Ron English Catalogue Raisonné</title>
   <link rel="stylesheet" href="../css/styles.css" />
 
   <style>
@@ -94,6 +94,136 @@
     }
   </style>
   <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+  <style id="early-works-period-sections-v2">
+    .period-section {
+      margin: 0 0 42px;
+    }
+
+    .period-title {
+      margin: 0 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e5e7eb;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      line-height: 1.15;
+    }
+
+    .grouped-object-card {
+      border: 1px solid #d6e1ff;
+      border-radius: 16px;
+      padding-bottom: 12px;
+      background: #fbfdff;
+    }
+  </style>
+  <style id="early-works-compact-gallery-v1">
+    /*
+      Compact early-works landing-page gallery.
+      Based on the smaller, tighter year-overview gallery treatment.
+    */
+
+    .gallery-wrap {
+      max-width: 1200px !important;
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .period-section {
+      margin-bottom: 34px !important;
+    }
+
+    .period-title {
+      margin-bottom: 14px !important;
+    }
+
+    .period-section .gallery-grid {
+      display: grid !important;
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+      gap: 14px !important;
+      align-items: stretch !important;
+    }
+
+    .period-section .gallery-item {
+      display: flex !important;
+      flex-direction: column !important;
+      min-width: 0 !important;
+      border-radius: 14px !important;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07) !important;
+    }
+
+    .period-section .gallery-item:hover {
+      transform: translateY(-2px) !important;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.11) !important;
+    }
+
+    .period-section .gallery-item img {
+      width: 100% !important;
+      height: 190px !important;
+      min-height: 190px !important;
+      max-height: 190px !important;
+      object-fit: contain !important;
+      object-position: center center !important;
+      padding: 8px !important;
+      margin: 0 !important;
+      background: #f3f4f6 !important;
+      border-radius: 0 !important;
+    }
+
+    .period-section .gallery-item .work-title {
+      margin: 10px 0 3px !important;
+      padding: 0 10px !important;
+      font-size: 0.92rem !important;
+      line-height: 1.25 !important;
+    }
+
+    .period-section .gallery-item .work-year,
+    .period-section .gallery-item .work-count {
+      margin: auto 0 12px !important;
+      padding: 2px 10px 0 !important;
+      font-size: 0.78rem !important;
+      line-height: 1.25 !important;
+      color: #555 !important;
+      text-align: center !important;
+    }
+
+    .period-section .gallery-item:not(.grouped-object-card) .work-title {
+      margin-bottom: 12px !important;
+    }
+
+    .period-section .grouped-object-card {
+      padding-bottom: 0 !important;
+    }
+
+    @media (max-width: 1050px) {
+      .period-section .gallery-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .period-section .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+      }
+
+      .period-section .gallery-item img {
+        height: 180px !important;
+        min-height: 180px !important;
+        max-height: 180px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .period-section .gallery-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .period-section .gallery-item img {
+        height: 230px !important;
+        min-height: 230px !important;
+        max-height: 230px !important;
+      }
+    }
+  </style>
 </head>
 
 <body class="decade-overview-page">
@@ -104,7 +234,7 @@
       <a class="nav-home nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
 
       <div class="nav-pills">
-        <a class="nav-pill is-active" href="https://ronenglish-archive.github.io/ron-english-paintings-1970s/paintings/1970s.html">1970s</a>
+        <a class="nav-pill is-active" href="https://ronenglish-archive.github.io/ron-english-paintings-1970s/paintings/1970s.html">1960s–1970s</a>
         <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-1980s/paintings/1980s.html">1980s</a>
         <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-1990s/paintings/1990s.html">1990s</a>
         <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2000s/paintings/2000s.html">2000s</a>
@@ -114,90 +244,385 @@
     </nav>
 
     <header class="page-header">
-      <h1 class="page-title">1970s</h1>
+      <h1 class="page-title">1960s–1970s</h1>
     </header>
 
-    <section class="intro-text" aria-label="1970s decade overview">
+                                    <section class="intro-text" aria-label="1960s–1970s early works overview">
       <p>
-        A chronological index of documented paintings and works on paper currently attributed to the 1970s.
+        This section documents paintings and works on paper from Ron English’s early period, spanning the 1960s and 1970s.
       </p>
       <p>
-        Entries are organized by year according to the best available documentation at the time of publication. As additional primary sources and verified records emerge, works may be added, revised, or reassigned.
+        Dates are shown when supported by signatures, inscriptions, archival documentation, or other available evidence. Works whose exact year remains uncertain are identified by the broadest date range currently supported by the record.
+      </p>
+      <p>
+        Grouped series, booklets, and notebooks appear once in this index. Their overview pages link to separately catalogued component works, each retaining its own Work ID.
       </p>
     </section>
 
-    <main class="gallery-wrap">
+                                    <main class="gallery-wrap">
 
-      <section class="gallery-grid" aria-label="1970s works">
-
-        <a class="gallery-item" href="../detail/paintings/1970s/1974/Blue-Cavern.html">
-          <img src="../images/Paintings/1970s/1974/Blue-Cavern.jpg" alt="Blue-Cavern (1974)" loading="lazy" />
-          <p class="work-title">Blue-Cavern</p>
-          <p class="work-year">1974</p>
+      <section class="period-section" aria-labelledby="period-1960s">
+        <h2 class="period-title" id="period-1960s">1960s</h2>
+        <div class="gallery-grid">
+        <a class="gallery-item grouped-object-card" href="../detail/paintings/1970s/early-works/dog-world-magazine.html">
+          <img src="../images/Paintings/1970s/thumbs/group-dog-world-magazine.jpg" alt="Dog World Magazine (1960s)" loading="lazy" />
+          <p class="work-title">Dog World Magazine</p>
+          <p class="work-count">16 component works</p>
         </a>
-
-        <a class="gallery-item" href="../detail/paintings/1970s/1974/Canyon.html">
-          <img src="../images/Paintings/1970s/1974/Canyon.jpg" alt="Canyon (1974)" loading="lazy" />
-          <p class="work-title">Canyon</p>
-          <p class="work-year">1974</p>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015425-V-and-R.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015425-V-and-R.jpg" alt="Branch Manager (1960s)" loading="lazy" />
+          <p class="work-title">Branch Manager</p>
         </a>
-
-        <a class="gallery-item" href="../detail/paintings/1970s/1976/Horse.html">
-          <img src="../images/Paintings/1970s/1974/Horse.jpg" alt="Horse (1976)" loading="lazy" />
-          <p class="work-title">Horse</p>
-          <p class="work-year">1976</p>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015320.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015320.jpg" alt="I Love Susan (1960s)" loading="lazy" />
+          <p class="work-title">I Love Susan</p>
         </a>
-
-        <a class="gallery-item" href="../detail/paintings/1970s/1975/God-of-Thunder.html">
-          <img src="../images/Paintings/1970s/1975/God-of-Thunder.jpg" alt="God-of-Thunder (1975)" loading="lazy" />
-          <p class="work-title">God-of-Thunder</p>
-          <p class="work-year">1975</p>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015426.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015426.jpg" alt="Moonlighting (1960s)" loading="lazy" />
+          <p class="work-title">Moonlighting</p>
         </a>
-
-        <a class="gallery-item" href="../detail/paintings/1970s/1975/KISS.html">
-          <img src="../images/Paintings/1970s/1975/KISS.jpg" alt="KISS (1975)" loading="lazy" />
-          <p class="work-title">KISS</p>
-          <p class="work-year">1975</p>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015445.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015445.jpg" alt="Robot (1960s)" loading="lazy" />
+          <p class="work-title">Robot</p>
         </a>
-
-        <a class="gallery-item" href="../detail/paintings/1970s/1975/Wolf.html">
-          <img src="../images/Paintings/1970s/1975/Wolf.jpg" alt="Wolf (1975)" loading="lazy" />
-          <p class="work-title">Wolf</p>
-          <p class="work-year">1975</p>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015430.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015430.jpg" alt="The Deep End (1960s)" loading="lazy" />
+          <p class="work-title">The Deep End</p>
         </a>
-
-        <a class="gallery-item" href="../detail/paintings/1970s/1976/Steven-Tyler.html">
-          <img src="../images/Paintings/1970s/1976/Steven-Tyler.jpg" alt="Steven Tyler Portrait (1976?)" loading="lazy" />
-          <p class="work-title">Steven Tyler Portrait</p>
-          <p class="work-year">1976?</p>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015427.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015427.jpg" alt="Too Alive to Burn (1960s)" loading="lazy" />
+          <p class="work-title">Too Alive to Burn</p>
         </a>
-
-        <a class="gallery-item" href="../detail/paintings/1970s/1976/Acid.html">
-          <img src="../images/Paintings/1970s/1976/Acid.jpg" alt="Acid (1976)" loading="lazy" />
-          <p class="work-title">Acid</p>
-          <p class="work-year">1976</p>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015283.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015283.jpg" alt="Werelion (1960s)" loading="lazy" />
+          <p class="work-title">Werelion</p>
         </a>
-
-        <a class="gallery-item" href="../detail/paintings/1970s/1976/Pipe.html">
-          <img src="../images/Paintings/1970s/1976/Pipe.jpg" alt="Pipe (1976)" loading="lazy" />
-          <p class="work-title">Pipe</p>
-          <p class="work-year">1976</p>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015284.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015284.jpg" alt="Werelion Freedom (1960s)" loading="lazy" />
+          <p class="work-title">Werelion Freedom</p>
         </a>
-
-        <a class="gallery-item" href="../detail/paintings/1970s/1976/Ron-and-Russel.html">
-          <img src="../images/Paintings/1970s/1976/Ron-and-Russel.jpg" alt="Ron-and-Russel (1976)" loading="lazy" />
-          <p class="work-title">Ron-and-Russel</p>
-          <p class="work-year">1976</p>
-        </a>
-
-        <a class="gallery-item" href="../detail/paintings/1970s/1977/Stoner-Lizard.html">
-          <img src="../images/Paintings/1970s/1977/Stoner-Lizard.jpg" alt="Stoner-Lizard (1977)" loading="lazy" />
-          <p class="work-title">Stoner-Lizard</p>
-          <p class="work-year">1977</p>
-        </a>
-
+        </div>
       </section>
-
+      <section class="period-section" aria-labelledby="period-1970s">
+        <h2 class="period-title" id="period-1970s">1970s</h2>
+        <div class="gallery-grid">
+        <a class="gallery-item grouped-object-card" href="../detail/paintings/1970s/early-works/class-notebook.html">
+          <img src="../images/Paintings/1970s/thumbs/group-class-notebook.jpg" alt="Class Notebook (1973)" loading="lazy" />
+          <p class="work-title">Class Notebook</p>
+          <p class="work-count">9 component works</p>
+        </a>
+        <a class="gallery-item grouped-object-card" href="../detail/paintings/1970s/early-works/kung-fu-drawings.html">
+          <img src="../images/Paintings/1970s/thumbs/group-kung-fu-drawings.jpg" alt="Kung Fu Drawings (1970s)" loading="lazy" />
+          <p class="work-title">Kung Fu Drawings</p>
+          <p class="work-count">9 component works</p>
+        </a>
+        <a class="gallery-item grouped-object-card" href="../detail/paintings/1970s/early-works/lakeview-high-school-imc-flyers.html">
+          <img src="../images/Paintings/1970s/thumbs/group-lakeview-high-school-imc-flyers.jpg" alt="Lakeview High School IMC Flyers (1970s)" loading="lazy" />
+          <p class="work-title">Lakeview High School IMC Flyers</p>
+          <p class="work-count">3 component works</p>
+        </a>
+        <a class="gallery-item grouped-object-card" href="../detail/paintings/1970s/early-works/self-portraits.html">
+          <img src="../images/Paintings/1970s/thumbs/group-self-portraits.jpg" alt="Self-Portraits (1970s)" loading="lazy" />
+          <p class="work-title">Self-Portraits</p>
+          <p class="work-count">5 component works</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015326.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015326.jpg" alt="A Dark and Stormy Mind (1970s)" loading="lazy" />
+          <p class="work-title">A Dark and Stormy Mind</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015330.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015330.jpg" alt="A Little Over His Head (1970s)" loading="lazy" />
+          <p class="work-title">A Little Over His Head</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015451.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015451.jpg" alt="A Stone&#39;s Throw Away (1970s)" loading="lazy" />
+          <p class="work-title">A Stone&#39;s Throw Away</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015337.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015337.jpg" alt="Ballpoint Lust (1970s)" loading="lazy" />
+          <p class="work-title">Ballpoint Lust</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015332.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015332.jpg" alt="Battle Fatigue (1970s)" loading="lazy" />
+          <p class="work-title">Battle Fatigue</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015548.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015548.jpg" alt="Caught Red-Handed (1970s)" loading="lazy" />
+          <p class="work-title">Caught Red-Handed</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015243.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015243.jpg" alt="Christmas Roast (1970s)" loading="lazy" />
+          <p class="work-title">Christmas Roast</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015311.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015311.jpg" alt="Coffin Break (1970s)" loading="lazy" />
+          <p class="work-title">Coffin Break</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015513.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015513.jpg" alt="Cosmic Feedback (1970s)" loading="lazy" />
+          <p class="work-title">Cosmic Feedback</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015308.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015308.jpg" alt="Cricket (1970s)" loading="lazy" />
+          <p class="work-title">Cricket</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015240.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015240.jpg" alt="Deer (1970s)" loading="lazy" />
+          <p class="work-title">Deer</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015441.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015441.jpg" alt="Double Diploma&#39;d (1970s)" loading="lazy" />
+          <p class="work-title">Double Diploma&#39;d</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015551.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015551.jpg" alt="Family Values, B.C. (1970s)" loading="lazy" />
+          <p class="work-title">Family Values, B.C.</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015334.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015334.jpg" alt="Framed (1970s)" loading="lazy" />
+          <p class="work-title">Framed</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015248.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015248.jpg" alt="Frankly Formal (1970s)" loading="lazy" />
+          <p class="work-title">Frankly Formal</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015402.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015402.jpg" alt="Ghost of Frantensteins Monster (1970s)" loading="lazy" />
+          <p class="work-title">Ghost of Frantensteins Monster</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015310.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015310.jpg" alt="Godzilla Strikes Again (1970s)" loading="lazy" />
+          <p class="work-title">Godzilla Strikes Again</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015446.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015446.jpg" alt="Grave Expectations (1970s)" loading="lazy" />
+          <p class="work-title">Grave Expectations</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015498.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015498.jpg" alt="Lycanthope (1970s)" loading="lazy" />
+          <p class="work-title">Lycanthope</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015328-V-and-R.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015328-V-and-R.jpg" alt="McCall&#39;s Cover 1 and 2 (1970s)" loading="lazy" />
+          <p class="work-title">McCall&#39;s Cover 1 and 2</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015278.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015278.jpg" alt="Misty Mountain (1970s)" loading="lazy" />
+          <p class="work-title">Misty Mountain</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015290.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015290.jpg" alt="Monagar Kill Hulk (1970s)" loading="lazy" />
+          <p class="work-title">Monagar Kill Hulk</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015444.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015444.jpg" alt="MONSTERS (1970s)" loading="lazy" />
+          <p class="work-title">MONSTERS</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015351.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015351.jpg" alt="Nosferatu (1970s)" loading="lazy" />
+          <p class="work-title">Nosferatu</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015250.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015250.jpg" alt="Planet of the Apes (1970s)" loading="lazy" />
+          <p class="work-title">Planet of the Apes</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015410.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015410.jpg" alt="Portrait of Girl (1970s)" loading="lazy" />
+          <p class="work-title">Portrait of Girl</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015292.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015292.jpg" alt="Profile in Fur (1970s)" loading="lazy" />
+          <p class="work-title">Profile in Fur</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015486.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015486.jpg" alt="RIP (1970s)" loading="lazy" />
+          <p class="work-title">RIP</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015288.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015288.jpg" alt="Rip 2 (1970s)" loading="lazy" />
+          <p class="work-title">Rip 2</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015239.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015239.jpg" alt="snoopy (1970s)" loading="lazy" />
+          <p class="work-title">snoopy</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015242.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015242.jpg" alt="Snoopy Taking a Nap (1970s)" loading="lazy" />
+          <p class="work-title">Snoopy Taking a Nap</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015303.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015303.jpg" alt="Squirk (1970s)" loading="lazy" />
+          <p class="work-title">Squirk</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015487.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015487.jpg" alt="The Line (1970s)" loading="lazy" />
+          <p class="work-title">The Line</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015279.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015279.jpg" alt="The Long Paws (1970s)" loading="lazy" />
+          <p class="work-title">The Long Paws</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015285.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015285.jpg" alt="The Man of More Steel (1970s)" loading="lazy" />
+          <p class="work-title">The Man of More Steel</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015295.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015295.jpg" alt="The Missing Link-Up (1970s)" loading="lazy" />
+          <p class="work-title">The Missing Link-Up</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015302.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015302.jpg" alt="The Monster of Frankenstein (1970s)" loading="lazy" />
+          <p class="work-title">The Monster of Frankenstein</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015289.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015289.jpg" alt="The Shadow of a Smile (1970s)" loading="lazy" />
+          <p class="work-title">The Shadow of a Smile</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015297.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015297.jpg" alt="The Usual Characters (1970s)" loading="lazy" />
+          <p class="work-title">The Usual Characters</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015312.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015312.jpg" alt="Tina with Roses (1970s)" loading="lazy" />
+          <p class="work-title">Tina with Roses</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015447.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015447.jpg" alt="To Grandmother (1970s)" loading="lazy" />
+          <p class="work-title">To Grandmother</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015450.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015450.jpg" alt="Troll Call (1970s)" loading="lazy" />
+          <p class="work-title">Troll Call</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015241.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015241.jpg" alt="UFO Feeding off the Grid (1970s)" loading="lazy" />
+          <p class="work-title">UFO Feeding off the Grid</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015296.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015296.jpg" alt="Un-American Gothic (1970s)" loading="lazy" />
+          <p class="work-title">Un-American Gothic</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015294.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015294.jpg" alt="Where Monsters Lurk (1970s)" loading="lazy" />
+          <p class="work-title">Where Monsters Lurk</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015293.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015293.jpg" alt="woodstock (1970s)" loading="lazy" />
+          <p class="work-title">woodstock</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015452.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015452.jpg" alt="Worried Much? (1970s)" loading="lazy" />
+          <p class="work-title">Worried Much?</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015245.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015245.jpg" alt="Yit (1970s)" loading="lazy" />
+          <p class="work-title">Yit</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015459.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015459.jpg" alt="Jurassic Beef (1971)" loading="lazy" />
+          <p class="work-title">Jurassic Beef</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015478.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015478.jpg" alt="A Cast of Bad Characters (1972)" loading="lazy" />
+          <p class="work-title">A Cast of Bad Characters</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015363.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015363.jpg" alt="Carrying the Torch (1972)" loading="lazy" />
+          <p class="work-title">Carrying the Torch</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015373.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015373.jpg" alt="Every Dog Has Its Doodle (1972)" loading="lazy" />
+          <p class="work-title">Every Dog Has Its Doodle</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015367.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015367.jpg" alt="Knock, Knock, Doom (1972)" loading="lazy" />
+          <p class="work-title">Knock, Knock, Doom</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015356.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015356.jpg" alt="Wish You Were Here (1972)" loading="lazy" />
+          <p class="work-title">Wish You Were Here</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015347.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015347.jpg" alt="Side Effects (1973)" loading="lazy" />
+          <p class="work-title">Side Effects</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015449.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015449.jpg" alt="black american (1974)" loading="lazy" />
+          <p class="work-title">black american</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015299.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015299.jpg" alt="The Agony of Expression (1974)" loading="lazy" />
+          <p class="work-title">The Agony of Expression</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015448.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015448.jpg" alt="yellow american (1974)" loading="lazy" />
+          <p class="work-title">yellow american</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015481.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015481.jpg" alt="Red Cross Poster (1975)" loading="lazy" />
+          <p class="work-title">Red Cross Poster</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/early-works/RE-015265.html">
+          <img src="../images/Paintings/1970s/thumbs/RE-015265.jpg" alt="Track Meet Flyer (1975)" loading="lazy" />
+          <p class="work-title">Track Meet Flyer</p>
+        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/1974/Blue-Cavern.html">
+                                                                          <img src="../images/Paintings/1970s/1974/Blue-Cavern.jpg" alt="Blue-Cavern (1974)" loading="lazy" />
+                                                                          <p class="work-title">Blue-Cavern</p>
+                                                                          <p class="work-year">1974</p>
+                                                                        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/1974/Canyon.html">
+                                                                          <img src="../images/Paintings/1970s/1974/Canyon.jpg" alt="Canyon (1974)" loading="lazy" />
+                                                                          <p class="work-title">Canyon</p>
+                                                                          <p class="work-year">1974</p>
+                                                                        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/1976/Horse.html">
+                                                                          <img src="../images/Paintings/1970s/1974/Horse.jpg" alt="Horse (1976)" loading="lazy" />
+                                                                          <p class="work-title">Horse</p>
+                                                                          <p class="work-year">1976</p>
+                                                                        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/1975/God-of-Thunder.html">
+                                                                          <img src="../images/Paintings/1970s/1975/God-of-Thunder.jpg" alt="God-of-Thunder (1975)" loading="lazy" />
+                                                                          <p class="work-title">God-of-Thunder</p>
+                                                                          <p class="work-year">1975</p>
+                                                                        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/1975/KISS.html">
+                                                                          <img src="../images/Paintings/1970s/1975/KISS.jpg" alt="KISS (1975)" loading="lazy" />
+                                                                          <p class="work-title">KISS</p>
+                                                                          <p class="work-year">1975</p>
+                                                                        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/1975/Wolf.html">
+                                                                          <img src="../images/Paintings/1970s/1975/Wolf.jpg" alt="Wolf (1975)" loading="lazy" />
+                                                                          <p class="work-title">Wolf</p>
+                                                                          <p class="work-year">1975</p>
+                                                                        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/1976/Steven-Tyler.html">
+                                                                          <img src="../images/Paintings/1970s/1976/Steven-Tyler.jpg" alt="Steven Tyler Portrait (1976?)" loading="lazy" />
+                                                                          <p class="work-title">Steven Tyler Portrait</p>
+                                                                          <p class="work-year">1976?</p>
+                                                                        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/1976/Acid.html">
+                                                                          <img src="../images/Paintings/1970s/1976/Acid.jpg" alt="Acid (1976)" loading="lazy" />
+                                                                          <p class="work-title">Acid</p>
+                                                                          <p class="work-year">1976</p>
+                                                                        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/1976/Pipe.html">
+                                                                          <img src="../images/Paintings/1970s/1976/Pipe.jpg" alt="Pipe (1976)" loading="lazy" />
+                                                                          <p class="work-title">Pipe</p>
+                                                                          <p class="work-year">1976</p>
+                                                                        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/1976/Ron-and-Russel.html">
+                                                                          <img src="../images/Paintings/1970s/1976/Ron-and-Russel.jpg" alt="Ron-and-Russel (1976)" loading="lazy" />
+                                                                          <p class="work-title">Ron-and-Russel</p>
+                                                                          <p class="work-year">1976</p>
+                                                                        </a>
+        <a class="gallery-item" href="../detail/paintings/1970s/1977/Stoner-Lizard.html">
+                                                                          <img src="../images/Paintings/1970s/1977/Stoner-Lizard.jpg" alt="Stoner-Lizard (1977)" loading="lazy" />
+                                                                          <p class="work-title">Stoner-Lizard</p>
+                                                                          <p class="work-year">1977</p>
+                                                                        </a>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -208,6 +633,23 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
