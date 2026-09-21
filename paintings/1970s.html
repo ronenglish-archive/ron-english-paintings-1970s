@@ -242,7 +242,55 @@
     width: 100% !important;
   }
 </style>
-</head>
+<style id="early-period-final-row-and-footer-center-v1">
+  /* Override the earlier compact grid rule so incomplete rows center. */
+  .period-section .gallery-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+  }
+
+  .period-section .gallery-grid > .gallery-item {
+    flex: 0 1 calc((100% - 42px) / 4) !important;
+    max-width: calc((100% - 42px) / 4) !important;
+    width: 100% !important;
+  }
+
+  .site-footer,
+  .site-footer p {
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  @media (max-width: 1050px) {
+    .period-section .gallery-grid > .gallery-item {
+      flex-basis: calc((100% - 28px) / 3) !important;
+      max-width: calc((100% - 28px) / 3) !important;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .period-section .gallery-grid {
+      gap: 12px !important;
+    }
+
+    .period-section .gallery-grid > .gallery-item {
+      flex-basis: calc((100% - 12px) / 2) !important;
+      max-width: calc((100% - 12px) / 2) !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .period-section .gallery-grid > .gallery-item {
+      flex-basis: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+</style></head>
 
 <body class="decade-overview-page">
 
