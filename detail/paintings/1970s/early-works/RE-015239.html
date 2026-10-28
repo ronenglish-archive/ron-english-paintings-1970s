@@ -183,6 +183,21 @@ body.ron-museum-v2 .ron-museum-v2-footer {font-size:14px;color:#777;margin:42px 
 body.ron-museum-v2 main.work-layout > section.section-block:not(:has(img,figure,video,iframe,a,li,p,blockquote,div)) {display:none}
 @media(max-width:580px){body.ron-museum-v2 .ron-museum-hero,body.ron-museum-v2 main.work-layout > section.section-block{padding:20px 12px}body.ron-museum-v2 .ron-museum-hero .work-hero-link{padding:7px}}
 </style>
+<style id="ron-museum-v2-width-lock">
+/* RON-MUSEUM-V2-EQUAL-PANEL-WIDTH-V1 : same external width as painting hero. */
+body.ron-museum-v2 main.work-layout > section.section-block,
+body.ron-museum-v2 main.work-layout > section.ron-pdoc-panel,
+body.ron-museum-v2 main.work-layout > section[data-role="cultural-artistic-references"] {
+ width:100% !important;max-width:1080px !important;box-sizing:border-box !important;
+ margin-left:auto !important;margin-right:auto !important;
+}
+body.ron-museum-v2 main.work-layout > section.ron-pdoc-panel .ron-pdoc-items {
+ display:flex !important;flex-flow:row wrap !important;justify-content:center !important;gap:16px !important;
+}
+body.ron-museum-v2 main.work-layout > section.ron-pdoc-panel figure.ron-pdoc-tile {
+ flex:0 1 220px !important;width:220px !important;max-width:100% !important;
+}
+</style>
 </head>
 
 <body class="ron-museum-v2">
@@ -228,7 +243,7 @@ body.ron-museum-v2 main.work-layout > section.section-block:not(:has(img,figure,
       <li><strong>Medium:</strong> Tempera on wood</li>
       <li><strong>Dimensions:</strong> 4 &#215; 3.5 inches</li>
       <li><strong>Work ID:</strong> RE-015239</li>
-      <li><strong>Signature:</strong> Signed “Ron E,” bottom right.</li>
+      <li><strong>Signature:</strong> Signed &ldquo;Ron E,&rdquo; lower right.</li>
       <li><strong>Provenance:</strong> Artist's Personal Collection</li>
     </ul>
 </section>
